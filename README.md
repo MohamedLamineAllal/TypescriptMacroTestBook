@@ -16,12 +16,12 @@ https://blogs.u2u.be/diedrik/post/typescript-transformers-transform-and-rise-up
 
 https://www.npmjs.com/package/ttypescript
 
-> Unfortunately right now tsconfig.json does not allow specifying custom AST transformers.
-> There’re a couple of alternatives you can utilize, each with its own caveat:
-> https://github.com/TypeStrong/ts-loader for webpack ecosystem
-https://github.com/TypeStrong/ts-node for REPL
-https://github.com/cevek/ttypescript for tsc replacement
-Write your own compiler wrapper
+> Unfortunately right now tsconfig.json does not allow specifying custom AST transformers.<br>
+> There’re a couple of alternatives you can utilize, each with its own caveat:<br>
+> - https://github.com/TypeStrong/ts-loader for webpack ecosystem<br>
+> - https://github.com/TypeStrong/ts-node for REPL<br>
+> - https://github.com/cevek/ttypescript for tsc replacement<br>
+> - Write your own compiler wrapper
 
 ## ttypescript
 
