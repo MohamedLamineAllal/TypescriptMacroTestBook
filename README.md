@@ -111,6 +111,7 @@ const PREDEFINED: IPredefinedStrategies = {
 
 const strategy: string | StrategyClass = 'someStrategy';
 
+// <<<<<<<<<<<<<<< casting with a variable >>>>>>>>>>>>>>>
 const mStrategy = strategy as keyof typeof PREDEFINED;
 
 let strategyClass: StrategyClass;
