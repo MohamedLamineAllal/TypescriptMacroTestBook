@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfigBase.json",
+  "include": [
+    "src/" 
+  ],
+  "exclude": [
+    "dist",
+    "src/**/*.tscVersion.ts"
+  ]
+}
