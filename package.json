@@ -1,8 +1,7 @@
 {
-  "name": "typescript_macro_test",
+  "name": "typescript_macro_test_book",
   "version": "1.0.0",
-  "description": "A repo for testing typescript macro tools and some useful usage",
-  "main": "index.js",
+  "description": "A repo for testing typescript macro tools and some useful usages as casting at scope!",
   "scripts": {
     "ttsc:ttm:build": "cd ttypescriptTransformer/typescript-transform-macros && npx ttsc && cd ../.. && npm run tsc:ttsc:ttm:castingAtScope:build",
     "tsc:ttsc:ttm:castingAtScope:build": "cd ttypescriptTransformer/typescript-transform-macros/ && npx tsc -p tsc.tsconfig.json",
