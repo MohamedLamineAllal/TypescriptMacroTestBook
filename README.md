@@ -76,6 +76,7 @@ const PREDEFINED: IPredefinedStrategies = {
 
 const strategy: string | StrategyClass = 'someStrategy';
 
+// <<<<<<<<<<<<<<<< Defining macro >>>>>>>>>>>>>>>>
 const mStrategy = MACRO(
   strategy as keyof typeof PREDEFINED
 );
