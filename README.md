@@ -91,7 +91,7 @@ if (PREDEFINED[mStrategy]) {
 const instance = new strategyClass();
 ```
 
-[No macro usage (compile with tsc)](./ttypescriptTransformer/typescript-transform-macros/src/castingAtScope/index.index.tscVersion.ts)
+[No macro usage (compile with tsc)](./ttypescriptTransformer/typescript-transform-macros/src/castingAtScope/index.tscVersion.ts)
 
 ```ts
 interface IStrategy {
@@ -134,11 +134,10 @@ const PREDEFINED = {
     'SomeStrategy': class SomeStrategy {
     }
 };
-const strategy = 'someStrategy';
-const mStrategy = MACRO(strategy);
+const strategy = 'someStrategy'; // <<<<<< no macro >>>>>>
 let strategyClass;
-if (PREDEFINED[mStrategy]) {
-    strategyClass = PREDEFINED[mStrategy];
+if (PREDEFINED[strategy]) {
+    strategyClass = PREDEFINED[strategy];
 }
 else {
     strategyClass = class SomeStrategy {
@@ -172,6 +171,14 @@ const instance = new strategyClass();
 ```
 
 No variable ending in the final code using the **macro** and macro transformer!
+
+If you want to run that on your platform (after npm install)
+
+you can run
+
+```
+npm run ttsc:ttm:build
+```
 
 More example will be added!
 

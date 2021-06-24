@@ -5,10 +5,9 @@ const PREDEFINED = {
     }
 };
 const strategy = 'someStrategy';
-const mStrategy = MACRO(strategy);
 let strategyClass;
-if (PREDEFINED[mStrategy]) {
-    strategyClass = PREDEFINED[mStrategy];
+if (PREDEFINED[strategy]) {
+    strategyClass = PREDEFINED[strategy];
 }
 else {
     strategyClass = class SomeStrategy {
